@@ -1,0 +1,223 @@
+{
+  "note": "Recorded local runs with actual Meta API calls. Model interpretations are not independently verified facts. These records are examples, not a substitute for running the application.",
+  "visual_story_test": {
+    "input": "Three silent excerpts from the same Cinestudy festival B-roll recording: 0-8s, 68-80s, 98-110s. This is not an independent multicamera dataset.",
+    "source": "https://cinestudy.org/2026/02/20/edit-this-podcast-documentary/",
+    "runs": [
+      {
+        "model": "muse-spark-1.3-contributor",
+        "createdAt": "2026-11-04T10:44:38.345Z",
+        "request": "Make a 15-second visual story about the festival as a shared gathering, from the audience and stage to people spending time together. Use only visible evidence, not invented speech, emotions or chronology.",
+        "title": "A Festival Shared Together",
+        "duration": 14.521333,
+        "story": {
+          "focus": {
+            "kind": "theme",
+            "label": "festival as a shared gathering",
+            "subjectIds": []
+          },
+          "premise": "People gather outdoors to watch together: seated before a stage, lining a shaded path as a costumed procession passes, and sharing space around a fairground umbrella.",
+          "beats": [
+            {
+              "id": "b1",
+              "purpose": "Establish the shared gathering with audience seated before the outdoor stage",
+              "momentIds": [
+                "m_stage_watch"
+              ],
+              "sceneIds": [
+                "6eb6064c-8677-45bf-a456-cf95db7e5c5a:0"
+              ],
+              "relationIds": [],
+              "turnIds": []
+            },
+            {
+              "id": "b2",
+              "purpose": "Show spectators and costumed walkers sharing the tree-lined path during the procession",
+              "momentIds": [
+                "m_path_crowd",
+                "m_pair_walk",
+                "m_attendants_march"
+              ],
+              "sceneIds": [
+                "6140853a-2276-4213-bf8b-7b12e3ef7358:0",
+                "6140853a-2276-4213-bf8b-7b12e3ef7358:1",
+                "6140853a-2276-4213-bf8b-7b12e3ef7358:2"
+              ],
+              "relationIds": [
+                "r_crowd_pair",
+                "r_pair_attendants"
+              ],
+              "turnIds": []
+            },
+            {
+              "id": "b3",
+              "purpose": "Show people spending time together around the fairground umbrella",
+              "momentIds": [
+                "m_umbrella_stand"
+              ],
+              "sceneIds": [
+                "0289af61-89c3-4bd2-9d10-5a02041e3cce:0"
+              ],
+              "relationIds": [],
+              "turnIds": []
+            }
+          ],
+          "missingEvidence": [
+            "Performer in red on stage is distant and uncertain and not used to identify performance content",
+            "No timed speech is available, so story is visual only with no spoken turns"
+          ],
+          "speech": []
+        },
+        "shots": [
+          {
+            "sceneId": "6eb6064c-8677-45bf-a456-cf95db7e5c5a:0",
+            "sourceId": "6eb6064c-8677-45bf-a456-cf95db7e5c5a",
+            "start": 0.5,
+            "end": 4.5,
+            "reason": "Wide view of seated audience facing stage establishes shared gathering",
+            "beatId": "b1"
+          },
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:0",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 0.5,
+            "end": 2,
+            "reason": "Spectators standing along shaded path watching approaching procession",
+            "beatId": "b2"
+          },
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:1",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 2.5,
+            "end": 6,
+            "reason": "Costumed pair in green gown and feathered hat walks past onlookers",
+            "beatId": "b2"
+          },
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:2",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 7,
+            "end": 11,
+            "reason": "Line of uniformed attendants with staffs and drums marches past spectators",
+            "beatId": "b2"
+          },
+          {
+            "sceneId": "0289af61-89c3-4bd2-9d10-5a02041e3cce:0",
+            "sourceId": "0289af61-89c3-4bd2-9d10-5a02041e3cce",
+            "start": 4,
+            "end": 5.5,
+            "reason": "Costumed performer and seated visitor share space under fairground umbrella",
+            "beatId": "b3"
+          }
+        ]
+      },
+      {
+        "model": "muse-spark-1.3-contributor",
+        "createdAt": "2026-11-04T10:45:14.313Z",
+        "request": "Change the perspective to how the costumed participants prepared for the festival and then interacted. If preparation is not actually shown, explicitly record that missing evidence and make a bounded 15-second story about their visible interactions instead. Reduce stage/audience coverage. Do not infer emotions, motives or relationships.",
+        "title": "Costumed Participants Interacting",
+        "duration": 15.062,
+        "story": {
+          "focus": {
+            "kind": "process",
+            "label": "costumed participants interacting",
+            "subjectIds": [
+              "s_green_gown",
+              "s_feathered_hat",
+              "s_attendants",
+              "s_headtails"
+            ]
+          },
+          "premise": "No preparation is shown. Costumed participants are visible walking forward along a path, marching past onlookers with staffs and drums, and standing holding an item near others at a fairground.",
+          "beats": [
+            {
+              "id": "b1",
+              "purpose": "Show costumed pair walking forward along the path",
+              "momentIds": [
+                "m_pair_walk"
+              ],
+              "sceneIds": [
+                "6140853a-2276-4213-bf8b-7b12e3ef7358:1"
+              ],
+              "relationIds": [],
+              "turnIds": []
+            },
+            {
+              "id": "b2",
+              "purpose": "Show uniformed attendants marching past along the same path",
+              "momentIds": [
+                "m_attendants_march"
+              ],
+              "sceneIds": [
+                "6140853a-2276-4213-bf8b-7b12e3ef7358:2"
+              ],
+              "relationIds": [],
+              "turnIds": []
+            },
+            {
+              "id": "b3",
+              "purpose": "Show costumed performer standing holding an item near seated visitor and passersby",
+              "momentIds": [
+                "m_umbrella_stand"
+              ],
+              "sceneIds": [
+                "0289af61-89c3-4bd2-9d10-5a02041e3cce:0"
+              ],
+              "relationIds": [],
+              "turnIds": []
+            }
+          ],
+          "missingEvidence": [
+            "No scenes show costumed participants preparing, dressing, rehearsing, or waiting before the festival",
+            "Stage and audience coverage reduced per request; stage performance moment not used",
+            "No timed speech is available, so story is visual only"
+          ],
+          "speech": []
+        },
+        "shots": [
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:1",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 2.5,
+            "end": 6.5,
+            "reason": "Woman in green gown and man in feathered hat walk forward along path",
+            "beatId": "b1"
+          },
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:2",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 6.8,
+            "end": 9.4,
+            "reason": "Uniformed attendants with staffs and drums march past along same path",
+            "beatId": "b2"
+          },
+          {
+            "sceneId": "6140853a-2276-4213-bf8b-7b12e3ef7358:2",
+            "sourceId": "6140853a-2276-4213-bf8b-7b12e3ef7358",
+            "start": 9.4,
+            "end": 11.9,
+            "reason": "Continued line of attendants marching past spectators on sunlit path",
+            "beatId": "b2"
+          },
+          {
+            "sceneId": "0289af61-89c3-4bd2-9d10-5a02041e3cce:0",
+            "sourceId": "0289af61-89c3-4bd2-9d10-5a02041e3cce",
+            "start": 2.5,
+            "end": 8.4,
+            "reason": "Costumed performer with striped head-tails stands holding item near seated visitor",
+            "beatId": "b3"
+          }
+        ]
+      }
+    ]
+  },
+  "audio_continuity_test": {
+    "model": "muse-spark-1.3-contributor",
+    "speech_model": "muse-voice-transcribe-1.0",
+    "duration": 30.021,
+    "picture_cut_at_seconds": 13,
+    "selected_speech_continues_until_seconds": 17.2,
+    "verification": "Output waveform correlated 0.9941 with its source around the picture cut, after alignment. ASR turn timing is approximate."
+  },
+  "source_credit": "Festival footage copyright Sonnyboo. Directed by Greg Sabo; produced by Greg Sabo and Peter John Ross; A-camera/cinematography Greg Sabo; B-camera Peter John Ross; hosted by Peter John Ross and Greg Sabo. Edited by Jihun Kim with OurTake. #CINESTUDY #SONNYBOO #SABOROSS"
+}

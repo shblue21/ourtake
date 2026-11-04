@@ -2,6 +2,8 @@
 
 **Everyone’s footage. The story you want to tell.**
 
+For this hackathon entry, see [run and contribution notes](HACKATHON.txt) and [recorded API-run examples](DEMO_EVIDENCE.json). The demonstrated configuration uses `META_MODEL=muse-spark-1.3-contributor` with a server-side `MODEL_API_KEY`.
+
 An English-language React studio that turns footage from different perspectives into an intentional story. Upload clips, describe your direction, review a real edit, and refine it in conversation.
 
 ## Run locally
