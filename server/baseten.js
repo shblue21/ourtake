@@ -5,7 +5,7 @@ import { dir } from './store.js';
 import { command, ffmpeg } from './media.js';
 
 const endpoint = 'https://inference.baseten.co/v1/chat/completions';
-export const basetenModel = () => process.env.BASETEN_MODEL?.trim() || 'meta-models/muse-spark-open';
+export const basetenModel = () => process.env.BASETEN_MODEL?.trim() || 'meta-models/muse-spark-open-1026';
 export const hasBasetenKey = () => Boolean(process.env.BASETEN_API_KEY?.trim());
 // Conservative app limits, including base64 expansion. Never publish private footage to a URL.
 export const BASETEN_LIMITS = { maxVideoSeconds: 300, maxRawBytes: 50 * 1024 * 1024, maxRequestBytes: 72 * 1024 * 1024 };

@@ -105,7 +105,7 @@ test('keyless end-to-end: sample → analyze → real MP4 → locked revision �
       await wait(await call(`/api/projects/${uploaded.id}/edit`, { mode: 'baseten', prompt: 'Show the action', target: 5 }));
       const basetenProject = await call(`/api/projects/${uploaded.id}`);
       assert.equal(basetenProject.analysis.mode, 'baseten');
-      assert.equal(basetenProject.versions.at(-1).model, 'meta-models/muse-spark-open');
+      assert.equal(basetenProject.versions.at(-1).model, 'meta-models/muse-spark-open-1026');
       assert.equal(basetenCalls, 4);
       assert.equal((await fetch(base + basetenProject.versions.at(-1).url)).status, 200);
       const oldContext=structuredClone(basetenProject.versions.at(-1).contextSnapshot);

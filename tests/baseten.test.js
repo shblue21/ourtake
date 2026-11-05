@@ -34,7 +34,7 @@ test('Baseten uses its own key, inline video, strict schema, and fails without p
     assert.equal(url, 'https://inference.baseten.co/v1/chat/completions');
     assert.equal(options.headers.Authorization, 'Bearer fake-baseten-key');
     const body = JSON.parse(options.body);
-    assert.equal(body.model, 'meta-models/muse-spark-open');
+    assert.equal(body.model, 'meta-models/muse-spark-open-1026');
     assert.equal(body.response_format.json_schema.strict, true);
     assert.equal(body.stream, false);
     const video = body.messages[1].content.find(c => c.type === 'video_url');
@@ -48,7 +48,7 @@ test('Baseten uses its own key, inline video, strict schema, and fails without p
   try {
     p.analysis = await analyze(p, 'baseten', () => {});
     assert.equal(p.analysis.mode, 'baseten');
-    assert.equal(p.analysis.model, 'meta-models/muse-spark-open');
+    assert.equal(p.analysis.model, 'meta-models/muse-spark-open-1026');
     const plan = await makePlan(p, { mode: 'baseten', prompt: 'story', previous: null, locked: [], target: 10 }, () => {});
     assert.equal(plan.shots[0].sourceId, 'source-a');
     for (const code of [400, 401, 402, 403, 413, 429, 500]) {

@@ -2,14 +2,10 @@ OurTake
 Meta Global AI Developer Hackathon 2026
 Indie Developer Track / Build for Your World
 
-Original contribution: the OurTake React studio and Node editing pipeline were developed during the hackathon. Local repository history starts November 3, 2026; subsequent working-tree changes were completed before the November 5, 11:00 KST submission deadline. Existing packages and third-party footage are not claimed as original contributions.
+The OurTake React studio and Node editing pipeline were developed during the hackathon. Existing packages and third-party footage are credited separately and are not claimed as original contributions.
 
-Runtime AI: Muse Spark 1.3 Contributor through Meta Model API, plus Muse Voice Transcribe 1.0 for timed speech.
+The demo video uses Muse Spark 1.3 Contributor and Muse Voice Transcribe 1.0 through Meta Model API. It shows saved results from actual API runs, not live inference timing. The visual-story example uses three silent excerpts from one Cinestudy festival recording; it is not an independent multicamera dataset. Festival source files are not bundled in this repository. The footage source and credits are recorded in DEMO_EVIDENCE.json.
 
-Run locally: npm ci; copy .env.example to .env; set MODEL_API_KEY and META_MODEL=muse-spark-1.3-contributor; npm run dev; open http://127.0.0.1:4317. Requires Node.js and FFmpeg/ffprobe as documented in README.md. Never commit .env. Contributor mode may allow provider use of submitted content for training; choose an appropriate model and use footage you can share.
+The bundled beach example is a separate, curated CC0 montage with preset sample-mode edits. Its credits are in public/demo/credits.html.
 
-The bundled beach example is a curated CC0 montage, not a live AI result. Its credits are in public/demo/credits.html. The submitted demo uses separately credited Cinestudy festival footage and saved results from actual API runs. The festival source files are not bundled here.
-
-Implemented: multi-clip import; per-source analysis; collection context with uncertain links; person/process/theme story outlines; source-linked cuts; whole-turn speech selection; speech across picture cuts; shot locks; comparison and restoration; MP4 download.
-
-Limits: local single-user prototype, no hosted sharing, no automatic multicamera synchronization, no verified person identity or causal inference. Existing tests validate contracts and media behavior, not general editorial quality.
+See README.md for setup, provider configuration and prototype limitations.
